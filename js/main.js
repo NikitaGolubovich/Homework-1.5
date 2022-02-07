@@ -2,20 +2,19 @@ let btnOn = document.querySelector(".brands__btn-menu--active");
 let imgOn = document.querySelector(".brands__menu-img");
 let itemOn = document.querySelectorAll(".brands__item--active");
 
-
 btnOn.addEventListener("click", function(event) {
     event.preventDefault();
 
     if (this.textContent === "Подробнее") {
         this.textContent = "Скрыть";
+        imgOn.style.transform = "rotate(180deg)";
         for (let i = 0; i < itemOn.length; i++) {
             let element = itemOn[i];
             element.style.display = "block";
         }
-
-        // imgOn.style.transform = "rotate(180deg)";
     } else {
         this.textContent = "Подробнее";
+        imgOn.style.transform = "rotate(180deg)";
         for (let i = 0; i < itemOn.length; i++) {
             let element = itemOn[i];
             element.style.display = "none";
