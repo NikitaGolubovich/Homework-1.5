@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: TT Lakes;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.013rem;
+    margin: 0;
+    padding: 0;
+    background: #F8F8F8;
+}
+
+
+/* brands__header */
+
+.brands__header {
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+    border-top: 1px solid #D9FFF5;
+    /* margin-bottom: 1rem; */
+}
+
+.brands__container {
+    margin: 0 1rem;
+}
+
+.brands__title {
+    padding: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.013rem;
+    text-transform: uppercase;
+    color: #7E7E82;
+    margin: 0;
+}
+
+
+/* brands__nav */
+
+.brands__nav {
+    background-color: #F8F8F8;
+    margin-top: 1rem;
+}
+
+.brands__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+.brands__btn {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    width: 16.875rem;
+    height: 4.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    /* identical to box height, or 150% */
+    letter-spacing: -0.013px;
+    color: #1B1C21;
+}
+
+.brands__item--active {
+    display: none;
+}
+
+.brands__btn-menu--active {
+    display: none;
+}
+
+
+/* media */
+
+@media (min-width: 48rem) {
+    .brands__container {
+        margin: 0 1.5rem;
+    }
+    .brands__nav {
+        margin-top: 1.5rem;
+    }
+    .brands__list {
+        flex-flow: wrap;
+        gap: 1.5rem;
+    }
+    .brands__btn-menu--active {
+        display: flex;
+        border: 0;
+        margin-top: 1.5rem;
+        padding: 0;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;
+        background: transparent;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 70rem) {
+    .brands__container {
+        margin: 0 2rem;
+    }
+    .brands__list {
+        flex-flow: wrap;
+        gap: 2rem;
+    }
+}
