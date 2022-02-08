@@ -11,15 +11,15 @@ body {
     letter-spacing: -0.013rem;
     margin: 0;
     padding: 0;
-    background: #F8F8F8;
+    background: #f8f8f8;
 }
 
 
 /* brands__header */
 
 .brands__header {
-    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
-    border-top: 1px solid #D9FFF5;
+    background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
+    border-top: 1px solid #d9fff5;
     /* margin-bottom: 1rem; */
 }
 
@@ -33,15 +33,19 @@ body {
     line-height: 1.5rem;
     letter-spacing: -0.013rem;
     text-transform: uppercase;
-    color: #7E7E82;
+    color: #7e7e82;
     margin: 0;
+}
+
+.show-more {
+    transform: rotate(180deg);
 }
 
 
 /* brands__nav */
 
 .brands__nav {
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     margin-top: 1rem;
 }
 
@@ -54,8 +58,8 @@ body {
 }
 
 .brands__btn {
-    background: #FFFFFF;
-    border: 1px solid #EAEAEA;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
     border-radius: 6px;
     width: 16.875rem;
     height: 4.5rem;
@@ -70,7 +74,7 @@ body {
     line-height: 1.5rem;
     /* identical to box height, or 150% */
     letter-spacing: -0.013px;
-    color: #1B1C21;
+    color: #1b1c21;
 }
 
 .brands__item--active {
@@ -92,6 +96,7 @@ body {
         margin-top: 1.5rem;
     }
     .brands__list {
+        display: flex;
         flex-flow: wrap;
         gap: 1.5rem;
     }
@@ -113,6 +118,7 @@ body {
         margin: 0 2rem;
     }
     .brands__list {
+        display: flex;
         flex-flow: wrap;
         gap: 2rem;
     }
